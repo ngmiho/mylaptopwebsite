@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<htmll lang="en">
+<head>
+    <!-- Assignment gd 1 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg border-body sticky-top bg-dark p3" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">MyLaptop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Sản phẩm</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Về chúng tôi
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="form.html">Tuyển dụng</a></li>
+                      <li><a class="dropdown-item" href="#">Hình thành</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Liên hệ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <div class="col-md-3 mt-2">
+                    <button type="button" class="btn btn-secondary">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </button>
+                    
+                  </div>
+                  <div class="col-md-4 me-2">
+                    <button type="button" class="btn btn-outline-success">
+                      <a href="#" style="color:white; text-decoration:none;">
+                        Đăng ký
+                      </a>
+                    </button>
+                  </div>
+                  <div class="col-md-4 me-2">
+                    <button type="button" class="btn btn-outline-success">
+                      <a href="#" style="color:white; text-decoration:none;">
+                        Đăng nhập
+                      </a>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>   
+
+          <!-- Article - Thanh toán -->
+          <article class="row mt-2">
+            <div class="col-md-8 offset-2 my-3">
+                <div class="card ms-5" style="width: 50rem;">
+                    <div class="card-header" style="font-size:larger; font-weight:500;">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        ĐƠN ĐĂNG KÝ
+                    </div>
+                    <div class="card-body">
+                        <form class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="disabledTextInput" class="form-label">Họ và tên</label>
+                                <input type="text" id="disabledTextInput" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="disabledTextInput" class="form-label">Số điện thoại</label>
+                                <input type="text" id="disabledTextInput" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="disabledTextInput" class="form-label">Vị trí</label>
+                                <div class="input-group mb-3">
+                                    <select class="form-select" id="inputGroupSelect02">
+                                        <option value="1" selected>Nhân viên kỹ thuật</option>
+                                        <option value="2">Nhân viên bán hàng</option>
+                                        <option value="3">Thu ngân</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-12">
+                                    <label for="disabledTextInput" class="form-label">Ghi chú</label>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="" id="" cols="102" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 me-4 mb-4">
+                                <button type="button" class="btn btn-outline-secondary" style="width:80px;">
+                                    <i class="fa-solid fa-floppy-disk"></i>Gửi
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary" style="width:80px;">
+                                    <i class="fa-solid fa-stop"></i>
+                                    Hủy
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        Vui lòng nhập đầy đủ thông tin
+                    </div>
+                </div>
+            </div>
+          </article>
+
+          <!-- footer -->
+          <div class="row text-bg-dark py-2 mx-1  mb-3 rounded-0">
+            <div class="col-md-3">
+              <div class="card-body">
+                <h5 class="card-title">Về MyLaptop</h5>
+                <p class="card-text">
+                  Phone: 090xxxxxxx
+                  <br>
+                  Email: mylaptop@gmail.com
+                  <br>
+                  <hr>
+                  <i class="fa-regular fa-copyright"></i> My Laptop
+                  <br>
+                  Khu vực: Việt Nam
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 offset-5 p-4">
+                <div class="card-body text-end">
+                  <p class="card-text">
+                    <a href="#">
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <br>
+                    <a href="#">
+                      <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <br>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <br>
+                    <a href="#">
+                      <i class="fa-brands fa-square-youtube"></i>
+                    </a>
+                    <br>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    
+                  </p>
+                </div>
+            </div>
+          </div>
+          
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/288196cb77.js" crossorigin="anonymous"></script>
+</body>
+</htmll>

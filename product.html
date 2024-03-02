@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<htmll lang="en">
+<head>
+    <!-- Assignment gd 1 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg border-body sticky-top bg-dark p3" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">MyLaptop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Sản phẩm</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Về chúng tôi
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="form.html">Tuyển dụng</a></li>
+                      <li><a class="dropdown-item" href="#">Hình thành</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Liên hệ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <div class="col-md-3 mt-2">
+                    <button type="button" class="btn btn-secondary">
+                      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </button>
+                    
+                  </div>
+                  <div class="col-md-4 me-2">
+                    <button type="button" class="btn btn-outline-success">
+                      <a href="#" style="color:white; text-decoration:none;">
+                        Đăng ký
+                      </a>
+                    </button>
+                  </div>
+                  <div class="col-md-4 me-2">
+                    <button type="button" class="btn btn-outline-success">
+                      <a href="#" style="color:white; text-decoration:none;">
+                        Đăng nhập
+                      </a>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>   
+
+          <!-- Header + Card + Carosel -->
+          <header class="row mt-2">
+            <div class="col-md-12">
+              <div class="card text-bg-dark rounded-0">
+                <img src="img/header.png" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <div class="col-md-12 offset-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/carasel1.jpg" class="d-block w-25" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/carasel2.jpg" class="d-block w-25" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- Article + accodion-->
+          <article class="row mt-2">
+
+            <!-- Danh sách loại sản phẩm + accodion -->
+            <div class="col-md-3">
+                <div class="accordion" id="accordionType">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMayTinh" aria-expanded="true" aria-controls="collapseMayTinh">
+                          Máy tính
+                        </button>
+                      </h2>
+                      <div id="collapseMayTinh" class="accordion-collapse collapse show" data-bs-parent="#accordionType">
+                        <div class="accordion-body">
+                            <!-- accodiontProduct -->
+                            <div class="accordion" id="accordionProduct">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMSI" aria-expanded="true" aria-controls="collapseMSI">
+                                      MSI
+                                    </button>
+                                  </h2>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAsus" aria-expanded="false" aria-controls="collapseAsus">
+                                      Asus
+                                    </button>
+                                  </h2>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPhuKien" aria-expanded="false" aria-controls="accordionPhuKien">
+                          Phụ kiện
+                        </button>
+                      </h2>
+                      <div id="accordionPhuKien" class="accordion-collapse collapse" data-bs-parent="#accordionType">
+                        <div class="accordion-body">
+                          <!--accordionAccessory-->
+                          <div class="accordion" id="accordionAccessory">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMouse" aria-expanded="false" aria-controls="collapseMouse">
+                                  Chuột
+                                </button>
+                              </h2>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKeyboard" aria-expanded="false" aria-controls="collapseKeyboard">
+                                  Bàn phím
+                                </button>
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+              <!-- Danh sách sản phẩm -->
+              <!-- AccodionProduct -->
+              <div class="col-md-9 ">
+                    <div class="accordion-item">
+                      <!-- accodion MSI -->
+                      <div id="collapseMSI" class="accordion-collapse collapse show" data-bs-parent="#accordionProduct">
+                        <div class="accordion-body">
+                          <div class="card">
+                            <div class="card-body bg-secondary">
+                              <div class="row">
+                                <!-- 123 -->
+                                <div class="col-md-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 456 -->
+                                <div class="col-md-3 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 789 -->
+                                <div class="col-md-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mt-5">
+                                <div class="col-md-1 offset-5">
+                                  <nav aria-label="...">
+                                    <ul class="pagination pagination-sm">
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    </ul>
+                                  </nav>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- accodion Asus -->
+                      <div id="collapseAsus" class="accordion-collapse collapse" data-bs-parent="#accordionProduct">
+                        <div class="accordion-body">
+                          <div class="card">
+                            <div class="card-body bg-secondary">
+                              <div class="row">
+                                <!-- 123 -->
+                                <div class="col-md-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 456 -->
+                                <div class="col-md-3 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 789 -->
+                                <div class="col-md-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mt-5">
+                                <div class="col-md-1 offset-5">
+                                  <nav aria-label="...">
+                                    <ul class="pagination pagination-sm">
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    </ul>
+                                  </nav>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- accodion Chuột -->
+                      <div id="collapseMouse" class="accordion-collapse collapse" data-bs-parent="#accordionAccessory">
+                        <div class="accordion-body">
+                          <div class="card">
+                            <div class="card-body bg-secondary">
+                              <div class="row">
+                                <!-- 123 -->
+                                <div class="col-md-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 456 -->
+                                <div class="col-md-3 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 789 -->
+                                <div class="col-md-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mt-5">
+                                <div class="col-md-1 offset-5">
+                                  <nav aria-label="...">
+                                    <ul class="pagination pagination-sm">
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    </ul>
+                                  </nav>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- accodion Bàn phím -->
+                      <div id="collapseKeyboard" class="accordion-collapse collapse" data-bs-parent="#accordionAccessory">
+                        <div class="accordion-body">
+                          <div class="card">
+                            <div class="card-body bg-secondary">
+                              <div class="row">
+                                <!-- 123 -->
+                                <div class="col-md-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Keyboard</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 456 -->
+                                <div class="col-md-3 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1 my-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 789 -->
+                                <div class="col-md-3">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 offset-1">
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/carasel2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Laptop</h5>
+                                      <p class="card-text">
+                                        CPU: Intel Core i7 13700k <br>
+                                        VGA: RTX 4070Ti | MAIN: Z790<br>
+                                        RAM: 32GB | SSD: 500GB
+                                        GIÁ: VND
+                                        TẶNG: ...
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mt-5">
+                                <div class="col-md-1 offset-5">
+                                  <nav aria-label="...">
+                                    <ul class="pagination pagination-sm">
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    </ul>
+                                  </nav>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              
+          </article>
+
+          <!-- footer -->
+          <div class="row text-bg-dark py-2 mx-1  my-3 rounded-0">
+            <div class="col-md-3">
+              <div class="card-body">
+                <h5 class="card-title">Về MyLaptop</h5>
+                <p class="card-text">
+                  Phone: 090xxxxxxx
+                  <br>
+                  Email: mylaptop@gmail.com
+                  <br>
+                  <hr>
+                  <i class="fa-regular fa-copyright"></i> My Laptop
+                  <br>
+                  Khu vực: Việt Nam
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 offset-5 p-4">
+                <div class="card-body text-end">
+                  <p class="card-text">
+                    <a href="#">
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <br>
+                    <a href="#">
+                      <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <br>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <br>
+                    <a href="#">
+                      <i class="fa-brands fa-square-youtube"></i>
+                    </a>
+                    <br>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    
+                  </p>
+                </div>
+            </div>
+          </div>
+          
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/288196cb77.js" crossorigin="anonymous"></script>
+</body>
+</htmll>
