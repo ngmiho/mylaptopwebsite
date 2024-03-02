@@ -5,4 +5,4 @@
 ![](https://github.com/ngmiho/mylaptopwebsite/blob/main/img/readme/layout2.png)
 ![](https://github.com/ngmiho/mylaptopwebsite/blob/main/img/readme/layout3.png)
 ![](https://github.com/ngmiho/mylaptopwebsite/blob/main/img/readme/layout4.png)
-#### © 2023 hint-code
+#### © 2024 ngmiho
